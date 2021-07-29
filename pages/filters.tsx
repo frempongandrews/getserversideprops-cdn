@@ -12,7 +12,7 @@ export default function Filters(props) {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   context.res.setHeader(
     'Cache-Control',
-    's-maxage=20, stale-while-revalidate=60'
+    's-maxage=20, stale-while-revalidate=3600'
   );
 
   // add a fake timeout of 2.5 seconds
